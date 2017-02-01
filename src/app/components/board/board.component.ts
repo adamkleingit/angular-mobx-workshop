@@ -4,7 +4,7 @@ import { GameService } from 'app/services/game.service';
 @Component({
   selector: 'ttt-board',
   template: `
-    <table>
+    <table *mobxAutorun>
       <tr *ngFor="let row of game.board; let i = index">
         <td *ngFor="let cell of row; let j = index">
           <ttt-cell [value]="cell" [nextValue]="game.currentPlayer" (select)="playCell(i,j)"></ttt-cell>

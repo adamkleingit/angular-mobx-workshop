@@ -4,8 +4,10 @@ import { GameService } from 'app/services/game.service';
 @Component({
   selector: 'ttt-score',
   template: `
-    <p>X: {{game.score.X}}</p>
-    <p>O: {{game.score.O}}</p>
+    <div *mobxAutorun>
+      <p>X: {{game.score.X}}</p>
+      <p>O: {{game.score.O}}</p>
+    </div>
   `,
   styles: []
 })

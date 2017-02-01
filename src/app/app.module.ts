@@ -10,6 +10,8 @@ import { ControlsComponent } from './components/controls/controls.component';
 import { GameComponent } from './components/game/game.component';
 import { ScoreComponent } from './components/score/score.component';
 
+import { Ng2MobxModule } from 'ng2-mobx';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { ScoreComponent } from './components/score/score.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    Ng2MobxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
