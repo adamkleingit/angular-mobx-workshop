@@ -1,8 +1,6 @@
 person class
-add h1
-add observable and computed
-return to bin log
+add observable and autorun
 add action setNames
 add useStrict
 add transactions and funds (imperatively)
-make declarative
+make declarative (computed)
