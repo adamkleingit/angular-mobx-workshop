@@ -1,10 +1,10 @@
-import { AngularMobxWorkshopPage } from './app.po';
+import { MulticheckboxPage } from './app.po';
 
-describe('angular-mobx-workshop App', function() {
-  let page: AngularMobxWorkshopPage;
+describe('multicheckbox App', function() {
+  let page: MulticheckboxPage;
 
   beforeEach(() => {
-    page = new AngularMobxWorkshopPage();
+    page = new MulticheckboxPage();
   });
 
   it('should display message saying app works', () => {

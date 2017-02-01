@@ -1,0 +1,7 @@
+<div class="selected-frameworks" *mobxAutorun>
+  <span *ngFor="let framework of frameworks.selectedItems"
+        class="selected-framework">
+    {{ framework.name }}
+    <span class="remove-framework" (click)="framework.checked = false">x</span>
+  </span>
+</div>

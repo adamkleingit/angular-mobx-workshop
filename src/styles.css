@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+
+[layout="column"] {
+  display: flex;
+  flex-direction: column;
+}
+md-checkbox {
+  margin-bottom: 16px;
+}
+
+button, select, html, textarea, input {
+  font-family: Roboto, "Helvetica Neue", sans-serif !important;
+}
+
+body {
+  border-top: 5px solid #dd0000;
+}
+
+main {
+  position: relative;
+}
+
+.change-detection-counter {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 48px;
+  color: red;
+}
