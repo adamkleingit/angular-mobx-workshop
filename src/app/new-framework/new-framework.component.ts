@@ -1,9 +1,17 @@
+`new-framework.component.ts`;
+
 import { Component } from '@angular/core';
 import { Frameworks } from '../stores/frameworks.store';
 
 @Component({
   selector: 'app-new-framework',
-  templateUrl: './new-framework.component.html',
+  template: `
+    <form autocomplete="off" (submit)="addNew()">
+      <md-input placeholder="add new item" name="newItem"
+        [(ngModel)]="newItem">
+      </md-input>
+    </form>
+  `,
   styleUrls: ['./new-framework.component.css']
 })
 export class NewFrameworkComponent {
@@ -15,5 +23,4 @@ export class NewFrameworkComponent {
     this.frameworks.addNew(this.newItem);
     this.newItem = '';
   }
-
 }

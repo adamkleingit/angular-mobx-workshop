@@ -1,3 +1,5 @@
+`frameworks.store.ts`;
+
 import { observable, computed, action } from 'mobx';
 import { Injectable } from '@angular/core';
 
@@ -8,7 +10,6 @@ export class Framework {
   constructor(name) {
     this.name = name;
   }
-
 }
 
 @Injectable()

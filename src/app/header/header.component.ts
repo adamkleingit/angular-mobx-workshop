@@ -2,7 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  templateUrl: './header.component.html',
+  template: `
+    <div class="header">
+      <h2>Angular MobX demo</h2>
+    </div>
+  `,
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
