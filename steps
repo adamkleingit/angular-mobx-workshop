@@ -1,0 +1,6 @@
+person class
+add observable and autorun
+add action setNames
+add useStrict
+add transactions and funds (imperatively)
+make declarative (computed)
